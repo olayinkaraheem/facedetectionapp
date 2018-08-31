@@ -20,7 +20,7 @@ class SignIn extends Component {
 	}
 
 	onSignInSubmit = () => {
-		fetch('http://localhost:3001/signin', {
+		fetch('https://facedetectionappapi.herokuapp.com/signin', {
 			method: 'post',
 			headers: {
 				'Content-Type': 'application/json'

@@ -25,7 +25,7 @@ class Register extends Component {
 
 
 	onSignupSubmit = () => {
-		fetch('http://localhost:3001/signup', {
+		fetch('https://facedetectionappapi.herokuapp.com/signup', {
 			method: 'post',
 			headers: {
 				'Content-Type': 'application/json',
@@ -43,6 +43,7 @@ class Register extends Component {
 				this.props.onRouteChange('home');
 			}
 		})
+		.catch(err => 'Unable to register')
 		// this.props.isSignedin = true;
 	}
 
